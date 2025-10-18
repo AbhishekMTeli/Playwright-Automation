@@ -1,0 +1,6 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="13.159166">
+<testsuite name="orange.spec.js" timestamp="2025-10-18T15:10:44.887Z" hostname="Chromium Desktop" tests="1" failures="0" skipped="0" time="10.314" errors="0">
+<testcase name="verify the error message" classname="orange.spec.js" time="10.314">
+</testcase>
+</testsuite>
+</testsuites>
