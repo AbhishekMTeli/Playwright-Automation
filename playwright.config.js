@@ -7,9 +7,9 @@ module.exports = {
 
   // Maximum time one test can run in milliseconds
   timeout: 30 * 1000,
-
+// retries :2,
   // Retry on failures (2 retries on CI, none locally)
-  retries: process.env.CI ? 2 : 0,
+   retries: process.env.CI ? 2 : 0,
 
   // Number of parallel workers (1 on CI, default locally)
   workers: process.env.CI ? 1 : undefined,

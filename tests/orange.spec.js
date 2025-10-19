@@ -1,6 +1,6 @@
 const{test,expect}=require("@playwright/test");
 // test.use({viewport : {height :600 ,width : 400}})
-test("login automation and logout automation" ,async ({page}) =>{
+test.only("login automation and logout automation" ,async ({page}) =>{
 await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 await page.getByPlaceholder("Username").fill("Admin");
 await page.locator("//input[@name='password']").fill("admin123");
@@ -12,7 +12,7 @@ await expect(page).toHaveURL(/login/);
 // await page.waitForTimeout(5000);
 })
 
-test.only("verify the error message", async ({ page }) => {
+test("verify the error message", async ({ page }) => {
   await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
   await page.getByPlaceholder("Username").fill("admin");
   await page.locator("//input[@name='password']").fill("admin1123");

@@ -63,7 +63,7 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.56.0",
     "workers": 6,
     "webServer": null
@@ -76,8 +76,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "verify the error message",
-          "ok": true,
+          "title": "login automation and logout automation",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -90,29 +90,58 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 9055,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 38697,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/dashboard/\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    - waiting for navigation to finish...\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/dashboard/\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    - waiting for navigation to finish...\u001b[22m\n\n    at /Users/ggipl/Desktop/playwright-demo/tests/orange.spec.js:8:20",
+                    "location": {
+                      "file": "/Users/ggipl/Desktop/playwright-demo/tests/orange.spec.js",
+                      "column": 20,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@name='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"admin123\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/dashboard/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByAltText(\u001b[32m\"profile picture\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Logout\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/login/\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/ggipl/Desktop/playwright-demo/tests/orange.spec.js",
+                        "column": 20,
+                        "line": 8
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/dashboard/\u001b[39m\nReceived string:  \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    - waiting for navigation to finish...\u001b[22m\n\n\n\u001b[0m \u001b[90m  6 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//input[@name='password']\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"admin123\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/dashboard/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByAltText(\u001b[32m\"profile picture\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[32m\"Logout\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/login/\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/ggipl/Desktop/playwright-demo/tests/orange.spec.js:8:20\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-10-19T08:47:20.495Z",
+                  "startTime": "2025-10-19T09:38:33.275Z",
                   "annotations": [],
                   "attachments": [
                     {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/orange-login-automation-and-logout-automation-Chromium-Desktop/video.webm"
+                    },
+                    {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/orange-verify-the-error-message-Chromium-Desktop/trace.zip"
+                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/orange-login-automation-and-logout-automation-Chromium-Desktop/trace.zip"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/ggipl/Desktop/playwright-demo/tests/orange.spec.js",
+                    "column": 20,
+                    "line": 8
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "75883669701cbad3d81d-c1e3e57cae0669725cec",
+          "id": "75883669701cbad3d81d-3eb7cefc5b01cb2d9b4b",
           "file": "orange.spec.js",
-          "line": 15,
+          "line": 3,
           "column": 6
         }
       ]
@@ -120,11 +149,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-19T08:47:18.782Z",
-    "duration": 12146.858,
-    "expected": 1,
+    "startTime": "2025-10-19T09:38:30.300Z",
+    "duration": 42215.388999999996,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

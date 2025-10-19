@@ -1,9 +1,47 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.146858">
-<testsuite name="orange.spec.js" timestamp="2025-10-19T08:47:18.892Z" hostname="Chromium Desktop" tests="1" failures="0" skipped="0" time="9.055" errors="0">
-<testcase name="verify the error message" classname="orange.spec.js" time="9.055">
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="42.215388999999995">
+<testsuite name="orange.spec.js" timestamp="2025-10-19T09:38:31.858Z" hostname="Chromium Desktop" tests="1" failures="1" skipped="0" time="38.697" errors="0">
+<testcase name="login automation and logout automation" classname="orange.spec.js" time="38.697">
+<failure message="orange.spec.js:3:6 login automation and logout automation" type="FAILURE">
+<![CDATA[  [Chromium Desktop] › orange.spec.js:3:6 › login automation and logout automation ─────────────────
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /dashboard/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        - waiting for navigation to finish...
+
+
+       6 | await page.locator("//input[@name='password']").fill("admin123");
+       7 | await page.locator("//button").click();
+    >  8 | await expect(page).toHaveURL(/dashboard/);
+         |                    ^
+       9 | await page.getByAltText("profile picture").click();
+      10 | await page.getByText("Logout").click();
+      11 | await expect(page).toHaveURL(/login/);
+        at /Users/ggipl/Desktop/playwright-demo/tests/orange.spec.js:8:20
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/orange-login-automation-and-logout-automation-Chromium-Desktop/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/orange-login-automation-and-logout-automation-Chromium-Desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/orange-login-automation-and-logout-automation-Chromium-Desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../orange-verify-the-error-message-Chromium-Desktop/trace.zip]]
+[[ATTACHMENT|../orange-login-automation-and-logout-automation-Chromium-Desktop/video.webm]]
+
+[[ATTACHMENT|../orange-login-automation-and-logout-automation-Chromium-Desktop/trace.zip]]
 ]]>
 </system-out>
 </testcase>
