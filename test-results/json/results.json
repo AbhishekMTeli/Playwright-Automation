@@ -91,14 +91,20 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 10314,
+                  "duration": 9055,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-10-18T15:10:45.972Z",
+                  "startTime": "2025-10-19T08:47:20.495Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/orange-verify-the-error-message-Chromium-Desktop/trace.zip"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -114,8 +120,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-18T15:10:44.776Z",
-    "duration": 13159.166000000001,
+    "startTime": "2025-10-19T08:47:18.782Z",
+    "duration": 12146.858,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

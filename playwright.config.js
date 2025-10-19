@@ -65,7 +65,10 @@ module.exports = {
       use: {
         browserName: 'chromium',
         ...devices['Desktop Chrome'],
-         viewport : {width:1536,height:838}
+         viewport : {width:1536,height:838},
+         screenshot : 'only-on-failure' ,
+         video : 'retain-on-failure' ,
+         trace : 'on'
       },
     }
     // ,

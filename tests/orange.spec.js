@@ -1,6 +1,6 @@
 const{test,expect}=require("@playwright/test");
-test.use({viewport : {height :600 ,width : 400}})
-test("login automation and logout automation" ,async function ({page}){
+// test.use({viewport : {height :600 ,width : 400}})
+test("login automation and logout automation" ,async ({page}) =>{
 await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 await page.getByPlaceholder("Username").fill("Admin");
 await page.locator("//input[@name='password']").fill("admin123");
