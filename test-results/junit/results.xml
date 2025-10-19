@@ -1,47 +1,166 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="42.215388999999995">
-<testsuite name="orange.spec.js" timestamp="2025-10-19T09:38:31.858Z" hostname="Chromium Desktop" tests="1" failures="1" skipped="0" time="38.697" errors="0">
-<testcase name="login automation and logout automation" classname="orange.spec.js" time="38.697">
-<failure message="orange.spec.js:3:6 login automation and logout automation" type="FAILURE">
-<![CDATA[  [Chromium Desktop] › orange.spec.js:3:6 › login automation and logout automation ─────────────────
+<testsuites id="" name="" tests="11" failures="2" skipped="1" errors="0" time="35.25313700000002">
+<testsuite name="etihad.spec.js" timestamp="2025-10-19T11:02:14.431Z" hostname="Chromium Desktop" tests="1" failures="0" skipped="0" time="21.379" errors="0">
+<testcase name="test" classname="etihad.spec.js" time="21.379">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../etihad-test-Chromium-Desktop/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="google.spec.js" timestamp="2025-10-19T11:02:14.431Z" hostname="Chromium Desktop" tests="1" failures="0" skipped="0" time="6.879" errors="0">
+<testcase name="Verify application title" classname="google.spec.js" time="6.879">
+<system-out>
+<![CDATA[Title is : Google
 
-    Error: expect(page).toHaveURL(expected) failed
+[[ATTACHMENT|../google-Verify-application-title-Chromium-Desktop/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="orange.spec.js" timestamp="2025-10-19T11:02:14.431Z" hostname="Chromium Desktop" tests="2" failures="0" skipped="0" time="22.953" errors="0">
+<testcase name="login automation and logout automation" classname="orange.spec.js" time="14.931">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../orange-login-automation-and-logout-automation-Chromium-Desktop/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="verify the error message" classname="orange.spec.js" time="8.022">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../orange-verify-the-error-message-Chromium-Desktop/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="sample.spec.js" timestamp="2025-10-19T11:02:14.431Z" hostname="Chromium Desktop" tests="6" failures="2" skipped="1" time="4.204" errors="0">
+<testcase name="My first test" classname="sample.spec.js" time="1.221">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../sample-My-first-test-Chromium-Desktop/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="My second test" classname="sample.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My third test" classname="sample.spec.js" time="0.483">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../sample-My-third-test-Chromium-Desktop/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="My fourth test" classname="sample.spec.js" time="0.667">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../sample-My-fourth-test-Chromium-Desktop/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="My fifth test" classname="sample.spec.js" time="0.844">
+<failure message="sample.spec.js:20:1 My fifth test" type="FAILURE">
+<![CDATA[  [Chromium Desktop] › sample.spec.js:20:1 › My fifth test ─────────────────────────────────────────
 
-    Expected pattern: /dashboard/
-    Received string:  ""
-    Timeout: 5000ms
+    Error: expect(received).toContain(expected) // indexOf
 
-    Call log:
-      - Expect "toHaveURL" with timeout 5000ms
-        - waiting for navigation to finish...
+    Matcher error: received value must not be null nor undefined
 
+    Received has value: null
 
-       6 | await page.locator("//input[@name='password']").fill("admin123");
-       7 | await page.locator("//button").click();
-    >  8 | await expect(page).toHaveURL(/dashboard/);
-         |                    ^
-       9 | await page.getByAltText("profile picture").click();
-      10 | await page.getByText("Logout").click();
-      11 | await expect(page).toHaveURL(/login/);
-        at /Users/ggipl/Desktop/playwright-demo/tests/orange.spec.js:8:20
+      19 |
+      20 | test("My fifth test",async ({page}) => {
+    > 21 | expect(null).toContain(null);
+         |              ^
+      22 | })
+      23 |
+      24 | test("My sixth test",async ({page}) => {
+        at /Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js:21:14
 
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ../test-results/orange-login-automation-and-logout-automation-Chromium-Desktop/video.webm
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/sample-My-fifth-test-Chromium-Desktop/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/orange-login-automation-and-logout-automation-Chromium-Desktop/trace.zip
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/sample-My-fifth-test-Chromium-Desktop/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/sample-My-fifth-test-Chromium-Desktop/trace.zip
     Usage:
 
-        npx playwright show-trace ../test-results/orange-login-automation-and-logout-automation-Chromium-Desktop/trace.zip
+        npx playwright show-trace ../test-results/sample-My-fifth-test-Chromium-Desktop/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../orange-login-automation-and-logout-automation-Chromium-Desktop/video.webm]]
+[[ATTACHMENT|../sample-My-fifth-test-Chromium-Desktop/test-failed-1.png]]
 
-[[ATTACHMENT|../orange-login-automation-and-logout-automation-Chromium-Desktop/trace.zip]]
+[[ATTACHMENT|../sample-My-fifth-test-Chromium-Desktop/video.webm]]
+
+[[ATTACHMENT|../sample-My-fifth-test-Chromium-Desktop/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="My sixth test" classname="sample.spec.js" time="0.989">
+<failure message="sample.spec.js:24:1 My sixth test" type="FAILURE">
+<![CDATA[  [Chromium Desktop] › sample.spec.js:24:1 › My sixth test ─────────────────────────────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Matcher error: received value must not be null nor undefined
+
+    Received has value: null
+
+      23 |
+      24 | test("My sixth test",async ({page}) => {
+    > 25 | expect(null).toContain(null);
+         |              ^
+      26 | })
+      27 |
+        at /Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js:25:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/sample-My-sixth-test-Chromium-Desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/sample-My-sixth-test-Chromium-Desktop/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/sample-My-sixth-test-Chromium-Desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/sample-My-sixth-test-Chromium-Desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../sample-My-sixth-test-Chromium-Desktop/test-failed-1.png]]
+
+[[ATTACHMENT|../sample-My-sixth-test-Chromium-Desktop/video.webm]]
+
+[[ATTACHMENT|../sample-My-sixth-test-Chromium-Desktop/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="whatsapp.spec.js" timestamp="2025-10-19T11:02:14.431Z" hostname="Chromium Desktop" tests="1" failures="0" skipped="0" time="26.56" errors="0">
+<testcase name="test" classname="whatsapp.spec.js" time="26.56">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../whatsapp-test-Chromium-Desktop/trace.zip]]
 ]]>
 </system-out>
 </testcase>
