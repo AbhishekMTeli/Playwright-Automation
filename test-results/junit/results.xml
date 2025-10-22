@@ -1,9 +1,9 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="10.368884">
-<testsuite name="keyboardAction.spec.js" timestamp="2025-10-22T07:45:13.472Z" hostname="Chromium Desktop" tests="1" failures="0" skipped="0" time="7.878" errors="0">
-<testcase name="simulating keyboard actions" classname="keyboardAction.spec.js" time="7.878">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="11.760764">
+<testsuite name="iframeHandeling.spec.js" timestamp="2025-10-22T11:11:08.010Z" hostname="Chromium Desktop" tests="1" failures="0" skipped="0" time="9.066" errors="0">
+<testcase name="handeling i frames" classname="iframeHandeling.spec.js" time="9.066">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../keyboardAction-simulating-keyboard-actions-Chromium-Desktop/trace.zip]]
+[[ATTACHMENT|../iframeHandeling-handeling-i-frames-Chromium-Desktop/trace.zip]]
 ]]>
 </system-out>
 </testcase>
