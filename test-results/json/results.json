@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 5
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -49,7 +49,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 5
+          "actualWorkers": 1
         },
         "id": "Chromium Desktop",
         "name": "Chromium Desktop",
@@ -63,20 +63,20 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.56.0",
     "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "etihad.spec.js",
-      "file": "etihad.spec.js",
+      "title": "keyboardAction.spec.js",
+      "file": "keyboardAction.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "test",
+          "title": "simulating keyboard actions",
           "ok": true,
           "tags": [],
           "tests": [
@@ -88,21 +88,21 @@
               "projectName": "Chromium Desktop",
               "results": [
                 {
-                  "workerIndex": 8,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 21379,
+                  "duration": 7878,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-10-19T11:02:17.570Z",
+                  "startTime": "2025-10-22T07:45:14.251Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/etihad-test-Chromium-Desktop/trace.zip"
+                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/keyboardAction-simulating-keyboard-actions-Chromium-Desktop/trace.zip"
                     }
                   ]
                 }
@@ -110,537 +110,21 @@
               "status": "expected"
             }
           ],
-          "id": "5990b2d966cf4161a960-15a582173eb6c6a7c2b6",
-          "file": "etihad.spec.js",
-          "line": 3,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "google.spec.js",
-      "file": "google.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Verify application title",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Chromium Desktop",
-              "projectName": "Chromium Desktop",
-              "results": [
-                {
-                  "workerIndex": 9,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 6879,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Title is : Google\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-10-19T11:02:17.646Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/google-Verify-application-title-Chromium-Desktop/trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "1c0dbff95e63c5913ac5-7bc510dfce2d25e35d6d",
-          "file": "google.spec.js",
-          "line": 2,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "orange.spec.js",
-      "file": "orange.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "login automation and logout automation",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Chromium Desktop",
-              "projectName": "Chromium Desktop",
-              "results": [
-                {
-                  "workerIndex": 10,
-                  "parallelIndex": 2,
-                  "status": "passed",
-                  "duration": 14931,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-10-19T11:02:17.754Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/orange-login-automation-and-logout-automation-Chromium-Desktop/trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "75883669701cbad3d81d-3eb7cefc5b01cb2d9b4b",
-          "file": "orange.spec.js",
+          "id": "58436394836948ea3e4a-97556423f0936e895b85",
+          "file": "keyboardAction.spec.js",
           "line": 3,
           "column": 1
-        },
-        {
-          "title": "verify the error message",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Chromium Desktop",
-              "projectName": "Chromium Desktop",
-              "results": [
-                {
-                  "workerIndex": 10,
-                  "parallelIndex": 2,
-                  "status": "passed",
-                  "duration": 8022,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-10-19T11:02:34.345Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/orange-verify-the-error-message-Chromium-Desktop/trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "75883669701cbad3d81d-c1e3e57cae0669725cec",
-          "file": "orange.spec.js",
-          "line": 15,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "sample.spec.js",
-      "file": "sample.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "My first test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Chromium Desktop",
-              "projectName": "Chromium Desktop",
-              "results": [
-                {
-                  "workerIndex": 11,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 1221,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-10-19T11:02:17.667Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/sample-My-first-test-Chromium-Desktop/trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "775aa06a839d2ee5676f-847f5a08640446289886",
-          "file": "sample.spec.js",
-          "line": 2,
-          "column": 1
-        },
-        {
-          "title": "My second test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [
-                {
-                  "type": "skip",
-                  "location": {
-                    "file": "/Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js",
-                    "line": 6,
-                    "column": 6
-                  }
-                }
-              ],
-              "expectedStatus": "skipped",
-              "projectId": "Chromium Desktop",
-              "projectName": "Chromium Desktop",
-              "results": [
-                {
-                  "workerIndex": 11,
-                  "parallelIndex": 3,
-                  "status": "skipped",
-                  "duration": 0,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-10-19T11:02:20.137Z",
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "/Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js",
-                        "line": 6,
-                        "column": 6
-                      }
-                    }
-                  ],
-                  "attachments": []
-                }
-              ],
-              "status": "skipped"
-            }
-          ],
-          "id": "775aa06a839d2ee5676f-375c3e12586720b8497a",
-          "file": "sample.spec.js",
-          "line": 6,
-          "column": 6
-        },
-        {
-          "title": "My third test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Chromium Desktop",
-              "projectName": "Chromium Desktop",
-              "results": [
-                {
-                  "workerIndex": 11,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 483,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-10-19T11:02:20.138Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/sample-My-third-test-Chromium-Desktop/trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "775aa06a839d2ee5676f-7fbd5aac27e7e27c25fe",
-          "file": "sample.spec.js",
-          "line": 10,
-          "column": 1
-        },
-        {
-          "title": "My fourth test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Chromium Desktop",
-              "projectName": "Chromium Desktop",
-              "results": [
-                {
-                  "workerIndex": 11,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 667,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-10-19T11:02:20.938Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/sample-My-fourth-test-Chromium-Desktop/trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "775aa06a839d2ee5676f-67e2f77d7c6c7a17ea28",
-          "file": "sample.spec.js",
-          "line": 16,
-          "column": 1
-        },
-        {
-          "title": "My fifth test",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Chromium Desktop",
-              "projectName": "Chromium Desktop",
-              "results": [
-                {
-                  "workerIndex": 11,
-                  "parallelIndex": 3,
-                  "status": "failed",
-                  "duration": 844,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must not be null nor undefined\n\nReceived has value: \u001b[31mnull\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must not be null nor undefined\n\nReceived has value: \u001b[31mnull\u001b[39m\n    at /Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js:21:14",
-                    "location": {
-                      "file": "/Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js",
-                      "column": 14,
-                      "line": 21
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m test(\u001b[32m\"My fifth test\"\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m expect(\u001b[36mnull\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m })\n \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m test(\u001b[32m\"My sixth test\"\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js",
-                        "column": 14,
-                        "line": 21
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must not be null nor undefined\n\nReceived has value: \u001b[31mnull\u001b[39m\n\n\u001b[0m \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m test(\u001b[32m\"My fifth test\"\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m expect(\u001b[36mnull\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m })\n \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m test(\u001b[32m\"My sixth test\"\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js:21:14\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-10-19T11:02:21.908Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/sample-My-fifth-test-Chromium-Desktop/test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/sample-My-fifth-test-Chromium-Desktop/video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/sample-My-fifth-test-Chromium-Desktop/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js",
-                    "column": 14,
-                    "line": 21
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "775aa06a839d2ee5676f-59216412bd966f0aa50a",
-          "file": "sample.spec.js",
-          "line": 20,
-          "column": 1
-        },
-        {
-          "title": "My sixth test",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Chromium Desktop",
-              "projectName": "Chromium Desktop",
-              "results": [
-                {
-                  "workerIndex": 13,
-                  "parallelIndex": 3,
-                  "status": "failed",
-                  "duration": 989,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must not be null nor undefined\n\nReceived has value: \u001b[31mnull\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must not be null nor undefined\n\nReceived has value: \u001b[31mnull\u001b[39m\n    at /Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js:25:14",
-                    "location": {
-                      "file": "/Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js",
-                      "column": 14,
-                      "line": 25
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m test(\u001b[32m\"My sixth test\"\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m expect(\u001b[36mnull\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m })\n \u001b[90m 27 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js",
-                        "column": 14,
-                        "line": 25
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must not be null nor undefined\n\nReceived has value: \u001b[31mnull\u001b[39m\n\n\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m test(\u001b[32m\"My sixth test\"\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m expect(\u001b[36mnull\u001b[39m)\u001b[33m.\u001b[39mtoContain(\u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m })\n \u001b[90m 27 |\u001b[39m\u001b[0m\n\u001b[2m    at /Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js:25:14\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-10-19T11:02:28.554Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/sample-My-sixth-test-Chromium-Desktop/test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/sample-My-sixth-test-Chromium-Desktop/video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/sample-My-sixth-test-Chromium-Desktop/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/Users/ggipl/Desktop/playwright-demo/tests/sample.spec.js",
-                    "column": 14,
-                    "line": 25
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "775aa06a839d2ee5676f-1e919241898bf4c9452e",
-          "file": "sample.spec.js",
-          "line": 24,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "whatsapp.spec.js",
-      "file": "whatsapp.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Chromium Desktop",
-              "projectName": "Chromium Desktop",
-              "results": [
-                {
-                  "workerIndex": 12,
-                  "parallelIndex": 4,
-                  "status": "passed",
-                  "duration": 26560,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-10-19T11:02:17.857Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/Users/ggipl/Desktop/playwright-demo/test-results/whatsapp-test-Chromium-Desktop/trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "55dc9288b644c618df06-639b67ef13b6dd038d55",
-          "file": "whatsapp.spec.js",
-          "line": 3,
-          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-19T11:02:11.700Z",
-    "duration": 35253.13700000002,
-    "expected": 8,
-    "skipped": 1,
-    "unexpected": 2,
+    "startTime": "2025-10-22T07:45:13.442Z",
+    "duration": 10368.884,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
     "flaky": 0
   }
 }
